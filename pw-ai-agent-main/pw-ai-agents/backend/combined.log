@@ -1,0 +1,603 @@
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"14b6d461-eb63-4f11-af8d-24cb6f7d56fe","service":"pw-ai-agents-backend"}
+{"duration":4,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"14b6d461-eb63-4f11-af8d-24cb6f7d56fe","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/favicon.ico","query":{},"requestId":"ce31203a-d361-4883-8df6-38887d4da18d","service":"pw-ai-agents-backend"}
+{"duration":2,"level":"info","message":"Outgoing response","method":"GET","path":"/favicon.ico","requestId":"ce31203a-d361-4883-8df6-38887d4da18d","service":"pw-ai-agents-backend","statusCode":404}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"649c9658-0f4c-4b9e-8df2-5cb01193a9d2","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"649c9658-0f4c-4b9e-8df2-5cb01193a9d2","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"4375773a-2f6d-400c-98c6-b3bba0677521","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"4375773a-2f6d-400c-98c6-b3bba0677521","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/api/v1/metrics","query":{},"requestId":"e9500250-e64c-4504-bee7-0082756daaae","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"GET","path":"/metrics","requestId":"e9500250-e64c-4504-bee7-0082756daaae","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"2bce1554-b1fa-4e30-b717-e286327dcec4","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":2,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":7,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"2bce1554-b1fa-4e30-b717-e286327dcec4","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"ab92d59f-594d-43b9-9140-b69775af3981","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":2,"level":"info","message":"Script generated successfully","scriptLength":964,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":964,"service":"pw-ai-agents-backend"}
+{"duration":3,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"duration":8,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"ab92d59f-594d-43b9-9140-b69775af3981","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"59d76ba7-c09d-44a6-912c-2ff5e2ba8578","service":"pw-ai-agents-backend"}
+{"duration":3,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"59d76ba7-c09d-44a6-912c-2ff5e2ba8578","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"aebb4218-951d-4455-96af-3c143eafb113","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":1,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":9,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"aebb4218-951d-4455-96af-3c143eafb113","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"ebe9cacc-4d1a-4273-919b-b84985d3ea6f","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":3,"level":"info","message":"Script generated successfully","scriptLength":964,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":964,"service":"pw-ai-agents-backend"}
+{"duration":3,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"duration":15,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"ebe9cacc-4d1a-4273-919b-b84985d3ea6f","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"068d3644-4a8f-4b18-8382-fb29a78c6c2b","service":"pw-ai-agents-backend"}
+{"duration":2,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"068d3644-4a8f-4b18-8382-fb29a78c6c2b","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"a6c73684-a00f-4b0c-ae4e-1125d849f488","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"a6c73684-a00f-4b0c-ae4e-1125d849f488","service":"pw-ai-agents-backend","statusCode":401}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"8558ed84-f92c-4fb6-b621-04e71b0a1f05","service":"pw-ai-agents-backend"}
+{"duration":0,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"8558ed84-f92c-4fb6-b621-04e71b0a1f05","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"c0a6c004-0665-4f89-832b-550e96a17198","service":"pw-ai-agents-backend"}
+{"component":"generateScript","error":"Cannot read properties of undefined (reading 'id')","level":"error","message":"Script generation failed","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"c0a6c004-0665-4f89-832b-550e96a17198","service":"pw-ai-agents-backend","statusCode":500}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"6ced5c58-84f8-46f8-88aa-f9ce2fd4ab0f","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"6ced5c58-84f8-46f8-88aa-f9ce2fd4ab0f","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"26150cd4-30bb-4be7-ad67-21e91a534785","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login Test"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":978,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":978,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":1}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":7,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"26150cd4-30bb-4be7-ad67-21e91a534785","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"6b3760a6-4a9b-4692-ba82-1c6fc14d3ced","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Registration Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Registration Test"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":1051,"service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Validating generated script","scriptLength":1051,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":1}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_002.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_002.ts","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"duration":3,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"6b3760a6-4a9b-4692-ba82-1c6fc14d3ced","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"8c484254-4b38-4469-8094-53f48f0ce414","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"Shopping Cart Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"Shopping Cart Test"}
+{"duration":1,"error":"Test metadata must contain at least one assertion","level":"error","message":"Failed to generate script","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"component":"generateScript","error":"Script generation failed: Test metadata must contain at least one assertion","level":"error","message":"Script generation failed","service":"pw-ai-agents-backend"}
+{"duration":3,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"8c484254-4b38-4469-8094-53f48f0ce414","service":"pw-ai-agents-backend","statusCode":500}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Graceful shutdown initiated","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"c43b5562-e2e5-44ae-9ce9-01eb885c7630","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":2,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":11,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"c43b5562-e2e5-44ae-9ce9-01eb885c7630","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"a6c544e4-dcf3-446c-9d94-d6a17baaf59e","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":3,"level":"info","message":"Script generated successfully","scriptLength":964,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":964,"service":"pw-ai-agents-backend"}
+{"duration":4,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":21,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"a6c544e4-dcf3-446c-9d94-d6a17baaf59e","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"3d92fa34-b575-4a2f-99b8-acb26c2b7d4d","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"3d92fa34-b575-4a2f-99b8-acb26c2b7d4d","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"6925958d-0904-433e-a068-53ee45bf3d62","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login Test"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":978,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":978,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":1}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":6,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"6925958d-0904-433e-a068-53ee45bf3d62","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"82ac9250-735a-4948-930e-13595bbc71b3","service":"pw-ai-agents-backend"}
+{"duration":3,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"82ac9250-735a-4948-930e-13595bbc71b3","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"94426ede-bbda-4c5d-b0ef-cc6a3cf30574","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login Test"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":399,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":399,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":9,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"94426ede-bbda-4c5d-b0ef-cc6a3cf30574","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"0215f36b-c583-485d-bd98-7713469ae0e4","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOGIN","testName":"User Login Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOGIN","testName":"User Login Test"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":577,"service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"level":"info","message":"Validating generated script","scriptLength":577,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_LOGIN.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LOGIN.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"duration":4,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"0215f36b-c583-485d-bd98-7713469ae0e4","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"4ed07a99-c500-49ec-b413-775833f4b320","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_CART","testName":"Add Item to Cart"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_CART","testName":"Add Item to Cart"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":457,"service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"level":"info","message":"Validating generated script","scriptLength":457,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_CART.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_CART.spec.ts","service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"duration":3,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"4ed07a99-c500-49ec-b413-775833f4b320","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"29111dc9-33e3-4273-a9a1-0f3cb530fd6f","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOGIN","testName":"User Login Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOGIN","testName":"User Login Test"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":583,"service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"level":"info","message":"Validating generated script","scriptLength":583,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_LOGIN.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LOGIN.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"duration":8,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"29111dc9-33e3-4273-a9a1-0f3cb530fd6f","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"5fa279f0-42e0-44f3-97dc-d0941813bb10","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_CART","testName":"Add Item to Cart"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_CART","testName":"Add Item to Cart"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":457,"service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"level":"info","message":"Validating generated script","scriptLength":457,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_CART.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_CART.spec.ts","service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"duration":5,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"5fa279f0-42e0-44f3-97dc-d0941813bb10","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"14e90d2c-69f1-4877-8101-3f96914c1740","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOGIN","testName":"User Login Test"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOGIN","testName":"User Login Test"}
+{"duration":2,"level":"info","message":"Script generated successfully","scriptLength":577,"service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"level":"info","message":"Validating generated script","scriptLength":577,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_LOGIN.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LOGIN.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LOGIN"}
+{"duration":9,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"14e90d2c-69f1-4877-8101-3f96914c1740","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"bcab0e79-d344-4c88-b7a2-3b4e175cbfb4","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_CART","testName":"Add Item to Cart"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_CART","testName":"Add Item to Cart"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":457,"service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"level":"info","message":"Validating generated script","scriptLength":457,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_CART.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_CART.spec.ts","service":"pw-ai-agents-backend","testId":"TC_CART"}
+{"duration":6,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"bcab0e79-d344-4c88-b7a2-3b4e175cbfb4","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"e84a7994-64da-4fdb-8e35-654b42fc9ce5","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":1,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":4,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"e84a7994-64da-4fdb-8e35-654b42fc9ce5","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"f1f9b26c-0958-46ef-90c2-908b500d1d21","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":347,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":347,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":9,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"f1f9b26c-0958-46ef-90c2-908b500d1d21","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"8e17a453-f4d4-4be2-9702-c3de616ab8b6","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":1,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":5,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"8e17a453-f4d4-4be2-9702-c3de616ab8b6","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"b633bb80-c658-44c6-ab3e-da56579f96f8","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":347,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":347,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":5,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"b633bb80-c658-44c6-ab3e-da56579f96f8","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"3a5222e1-811c-4974-9163-68912c0f4282","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":347,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":347,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":7,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"3a5222e1-811c-4974-9163-68912c0f4282","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"c7b29183-0c6b-4af6-9e06-0529a5e744b7","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_002"}
+{"duration":1,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_002"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":4,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"c7b29183-0c6b-4af6-9e06-0529a5e744b7","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"98a23fc4-91fb-437f-a823-a30f11ccaed7","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":347,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":347,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":17,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"98a23fc4-91fb-437f-a823-a30f11ccaed7","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"5a6b6096-9790-4e00-aebd-4167fbec73eb","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_002"}
+{"duration":0,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_002"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":5,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"5a6b6096-9790-4e00-aebd-4167fbec73eb","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"b662d9bf-d0a8-4ca5-9b6a-53cb3cf39738","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":347,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":347,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":12,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"b662d9bf-d0a8-4ca5-9b6a-53cb3cf39738","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"61753106-d366-4476-9d80-e369ff2bd208","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Login"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":347,"service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Validating generated script","scriptLength":347,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_002.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_002.spec.ts","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"duration":7,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"61753106-d366-4476-9d80-e369ff2bd208","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"180e1ed4-b371-45ec-9060-d52bd5dc609d","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Login"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":594,"service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Validating generated script","scriptLength":594,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_002.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_002.spec.ts","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"duration":11,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"180e1ed4-b371-45ec-9060-d52bd5dc609d","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"7670cf7d-67b9-45e2-8483-de9f0e0a3a06","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_002","testName":"User Login"}
+{"duration":1,"level":"info","message":"Script generated successfully","scriptLength":635,"service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Validating generated script","scriptLength":635,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_002.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_002.spec.ts","service":"pw-ai-agents-backend","testId":"TC_002"}
+{"duration":9,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"7670cf7d-67b9-45e2-8483-de9f0e0a3a06","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"8d4f1e37-e351-44b5-9e7e-4e413f0b9d5f","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"User Login"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"User Login"}
+{"duration":0,"level":"info","message":"Script generated successfully","scriptLength":635,"service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Validating generated script","scriptLength":635,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_003.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_003.spec.ts","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"duration":11,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"8d4f1e37-e351-44b5-9e7e-4e413f0b9d5f","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"e568df74-b658-42d1-8da1-95ca4bd04fe2","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOCATOR_TEST","testName":"Login with Discovered Locators"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LOCATOR_TEST","testName":"Login with Discovered Locators"}
+{"confidence":0.5,"description":"username input field","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('username-input-field')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"password field","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('password-field')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"login button","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('login-button')","service":"pw-ai-agents-backend"}
+{"duration":10270,"level":"info","message":"Script generated successfully","scriptLength":609,"service":"pw-ai-agents-backend","testId":"TC_LOCATOR_TEST"}
+{"level":"info","message":"Validating generated script","scriptLength":609,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\harip\\automation\\pw-ai-agent\\pw-ai-agents\\tests\\ui\\TC_LOCATOR_TEST.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LOCATOR_TEST"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LOCATOR_TEST.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LOCATOR_TEST"}
+{"duration":10278,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"e568df74-b658-42d1-8da1-95ca4bd04fe2","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"a9c1bdf0-5322-4f37-a572-ef212ce8f132","service":"pw-ai-agents-backend"}
+{"duration":2,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"a9c1bdf0-5322-4f37-a572-ef212ce8f132","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/api/v1/metrics","query":{},"requestId":"22756bb5-6f4d-4e9b-9775-37fcf66fe6cb","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"GET","path":"/metrics","requestId":"22756bb5-6f4d-4e9b-9775-37fcf66fe6cb","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"e715b01a-465c-4d4b-af3c-c544a2328954","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":1,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":3,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"e715b01a-465c-4d4b-af3c-c544a2328954","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"3b2bc826-9d1e-481b-b42f-24a2bcdbe5ca","service":"pw-ai-agents-backend"}
+{"duration":0,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"3b2bc826-9d1e-481b-b42f-24a2bcdbe5ca","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/api/v1/metrics","query":{},"requestId":"dbf40820-404b-434e-be26-5fd1d12d2bfa","service":"pw-ai-agents-backend"}
+{"duration":0,"level":"info","message":"Outgoing response","method":"GET","path":"/metrics","requestId":"dbf40820-404b-434e-be26-5fd1d12d2bfa","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"0577942a-0272-4e75-891d-b75da052c1af","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":0,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":2,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"0577942a-0272-4e75-891d-b75da052c1af","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"ab3bf9c0-df29-4f76-8fea-b444985f19da","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_001","testName":"LLM Verification Test"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_001","testName":"LLM Verification Test"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-2","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_001"}
+{"enhancedSteps":1,"level":"info","message":"Metadata enhancement complete","originalSteps":1,"service":"pw-ai-agents-backend"}
+{"duration":550,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":295,"service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_001"}
+{"level":"info","message":"Validating generated script","scriptLength":295,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_LLM_VERIFY_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LLM_VERIFY_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_001"}
+{"duration":560,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"ab3bf9c0-df29-4f76-8fea-b444985f19da","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"b05c3856-cbc4-4695-87dc-3e01b29bb27d","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_003","testName":"LLM Verification Test 3"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_003","testName":"LLM Verification Test 3"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-2","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_003"}
+{"enhancedSteps":1,"level":"info","message":"Metadata enhancement complete","originalSteps":1,"service":"pw-ai-agents-backend"}
+{"duration":2946,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":297,"service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_003"}
+{"level":"info","message":"Validating generated script","scriptLength":297,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_LLM_VERIFY_003.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_003"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LLM_VERIFY_003.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_003"}
+{"duration":2955,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"b05c3856-cbc4-4695-87dc-3e01b29bb27d","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"20c8ac75-1688-4296-a41d-1fb462605018","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_004","testName":"LLM Verification Test 4"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_004","testName":"LLM Verification Test 4"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-2","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_004"}
+{"enhancedSteps":1,"level":"info","message":"Metadata enhancement complete","originalSteps":1,"service":"pw-ai-agents-backend"}
+{"duration":413,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":297,"service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_004"}
+{"level":"info","message":"Validating generated script","scriptLength":297,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_LLM_VERIFY_004.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_004"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LLM_VERIFY_004.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_004"}
+{"duration":420,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"20c8ac75-1688-4296-a41d-1fb462605018","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"1d3c53b7-394b-4d06-8424-f82df892aa38","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"1d3c53b7-394b-4d06-8424-f82df892aa38","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"1ba58d41-5373-4296-8cc8-782c7028d756","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_RUN_NOW","testName":"LLM Verification Run Now"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_RUN_NOW","testName":"LLM Verification Run Now"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-2","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_RUN_NOW"}
+{"enhancedSteps":1,"level":"info","message":"Metadata enhancement complete","originalSteps":1,"service":"pw-ai-agents-backend"}
+{"duration":1626,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":294,"service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_RUN_NOW"}
+{"level":"info","message":"Validating generated script","scriptLength":294,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_LLM_VERIFY_RUN_NOW.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_RUN_NOW"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_LLM_VERIFY_RUN_NOW.spec.ts","service":"pw-ai-agents-backend","testId":"TC_LLM_VERIFY_RUN_NOW"}
+{"duration":1629,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"1ba58d41-5373-4296-8cc8-782c7028d756","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"a5cd5f19-89ab-4e45-b9b9-51453914b051","service":"pw-ai-agents-backend"}
+{"duration":37,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"a5cd5f19-89ab-4e45-b9b9-51453914b051","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/test-cases/upload","query":{},"requestId":"8c35f9b2-d58f-48ec-989c-119fc3814565","service":"pw-ai-agents-backend"}
+{"format":"manual","level":"info","message":"Processing test case upload","projectId":"proj_12345","service":"pw-ai-agents-backend","testCaseCount":1}
+{"level":"info","message":"Parsing test case","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"duration":2,"level":"info","message":"Test case parsed successfully","service":"pw-ai-agents-backend","testCaseId":"TC_001"}
+{"failed":0,"level":"info","message":"Test case parsing completed","service":"pw-ai-agents-backend","successful":1}
+{"duration":18,"level":"info","message":"Outgoing response","method":"POST","path":"/test-cases/upload","requestId":"8c35f9b2-d58f-48ec-989c-119fc3814565","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"9d32a8b5-0cf4-4864-b230-0cd14254943a","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"enhancedSteps":4,"level":"info","message":"Metadata enhancement complete","originalSteps":4,"service":"pw-ai-agents-backend"}
+{"duration":637,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":607,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":607,"service":"pw-ai-agents-backend"}
+{"duration":3,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":657,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"9d32a8b5-0cf4-4864-b230-0cd14254943a","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"e4c1900a-9fe4-404d-83e6-edf1c35e500e","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_001","testName":"User Login"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"enhancedSteps":4,"level":"info","message":"Metadata enhancement complete","originalSteps":4,"service":"pw-ai-agents-backend"}
+{"duration":435,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":607,"service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Validating generated script","scriptLength":607,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_001.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_001.spec.ts","service":"pw-ai-agents-backend","testId":"TC_001"}
+{"duration":445,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"e4c1900a-9fe4-404d-83e6-edf1c35e500e","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"efb90e92-8fc8-4e8c-b388-69009e19305f","service":"pw-ai-agents-backend"}
+{"duration":2,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"efb90e92-8fc8-4e8c-b388-69009e19305f","service":"pw-ai-agents-backend","statusCode":401}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"6594703c-9074-4690-8de9-1102c9caff5c","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"6594703c-9074-4690-8de9-1102c9caff5c","service":"pw-ai-agents-backend","statusCode":401}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"5f636648-bf41-4169-b4d9-0b6a0e34164c","service":"pw-ai-agents-backend"}
+{"component":"generateScript","error":"Cannot read properties of undefined (reading 'id')","level":"error","message":"Script generation failed","service":"pw-ai-agents-backend"}
+{"duration":1,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"5f636648-bf41-4169-b4d9-0b6a0e34164c","service":"pw-ai-agents-backend","statusCode":500}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"0aa6cb44-ea78-45c2-9d11-4dfb4c29712d","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"enhancedSteps":17,"level":"info","message":"Metadata enhancement complete","originalSteps":17,"service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Click login button","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('click-login-button')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Click create lead button","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('click-create-lead-button')","service":"pw-ai-agents-backend"}
+{"duration":3503,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":1236,"service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Validating generated script","scriptLength":1236,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_003.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_003.spec.ts","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"duration":3508,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"0aa6cb44-ea78-45c2-9d11-4dfb4c29712d","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"GET","path":"/health","query":{},"requestId":"17b399d6-b52e-4483-a398-514e30ebd893","service":"pw-ai-agents-backend"}
+{"duration":2,"level":"info","message":"Outgoing response","method":"GET","path":"/health","requestId":"17b399d6-b52e-4483-a398-514e30ebd893","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"85a97e24-755e-413f-a8e0-7275c54d726a","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_004","testName":"CRMSFA - Create Opportunity Flow (MCP)"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_004","testName":"CRMSFA - Create Opportunity Flow (MCP)"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_004"}
+{"enhancedSteps":11,"level":"info","message":"Metadata enhancement complete","originalSteps":11,"service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Username","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-username')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Password","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-password')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Click Login button","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('click-login-button')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Account Or Lead","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-account-or-lead')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Opportunity Name","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-opportunity-name')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Opportunity Amount","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-opportunity-amount')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Estimated Close Date","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-estimated-close-date')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Click Create Opportunity button","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('click-create-opportunity-button')","service":"pw-ai-agents-backend"}
+{"duration":9833,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":1392,"service":"pw-ai-agents-backend","testId":"TC_004"}
+{"level":"info","message":"Validating generated script","scriptLength":1392,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_004.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_004"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_004.spec.ts","service":"pw-ai-agents-backend","testId":"TC_004"}
+{"duration":9838,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"85a97e24-755e-413f-a8e0-7275c54d726a","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"b60323f6-2048-46be-b01f-25aed2f440a3","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_005","testName":"CRMSFA - My Leads Navigation (MCP)"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_005","testName":"CRMSFA - My Leads Navigation (MCP)"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_005"}
+{"enhancedSteps":6,"level":"info","message":"Metadata enhancement complete","originalSteps":6,"service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Username","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-username')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Enter Password","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('enter-password')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Click Login button","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('click-login-button')","service":"pw-ai-agents-backend"}
+{"confidence":0.5,"description":"Click a random lead from the list","level":"info","message":"Discovered locator","method":"fallback","selector":"getByTestId('click-a-random-lead-from-the-list')","service":"pw-ai-agents-backend"}
+{"duration":7861,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":903,"service":"pw-ai-agents-backend","testId":"TC_005"}
+{"level":"info","message":"Validating generated script","scriptLength":903,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"C:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_005.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_005"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_005.spec.ts","service":"pw-ai-agents-backend","testId":"TC_005"}
+{"duration":7865,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"b60323f6-2048-46be-b01f-25aed2f440a3","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"f9d7d8b3-9639-4fb8-9cb0-7e130fbcb60a","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"Leaftaps Create Lead"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"Leaftaps Create Lead"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"enhancedSteps":14,"level":"info","message":"Metadata enhancement complete","originalSteps":14,"service":"pw-ai-agents-backend"}
+{"duration":582,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":1448,"service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Validating generated script","scriptLength":1448,"service":"pw-ai-agents-backend"}
+{"duration":1,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_003.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_003.spec.ts","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"duration":592,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"f9d7d8b3-9639-4fb8-9cb0-7e130fbcb60a","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"5cc87511-833c-47c8-85eb-f502aefb2115","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"enhancedSteps":17,"level":"info","message":"Metadata enhancement complete","originalSteps":17,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"MCP locator discovery: connecting to MCP server","serverPath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\MCP\\dist\\index.js","service":"pw-ai-agents-backend"}
+{"error":"Unexpected token 'C', \"Cannot rea\"... is not valid JSON","level":"warn","message":"MCP locator discovery failed, using fallback","service":"pw-ai-agents-backend"}
+{"confidence":0.3,"description":"Click login button","level":"info","message":"Discovered locator","method":"mcp-fallback","selector":"getByTestId('click-login-button')","service":"pw-ai-agents-backend"}
+{"level":"info","message":"MCP locator discovery: connecting to MCP server","serverPath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\MCP\\dist\\index.js","service":"pw-ai-agents-backend"}
+{"error":"Unexpected token 'C', \"Cannot rea\"... is not valid JSON","level":"warn","message":"MCP locator discovery failed, using fallback","service":"pw-ai-agents-backend"}
+{"confidence":0.3,"description":"Click create lead button","level":"info","message":"Discovered locator","method":"mcp-fallback","selector":"getByTestId('click-create-lead-button')","service":"pw-ai-agents-backend"}
+{"duration":6493,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":1236,"service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Validating generated script","scriptLength":1236,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_003.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_003.spec.ts","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"duration":6497,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"5cc87511-833c-47c8-85eb-f502aefb2115","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}
+{"environment":"development","level":"info","message":"Server started successfully","port":3000,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"343cbe54-26bb-42a2-aaee-da6b5c156541","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"enhancedSteps":17,"level":"info","message":"Metadata enhancement complete","originalSteps":17,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"MCP locator discovery: connecting to MCP server","serverPath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\MCP\\dist\\index.js","service":"pw-ai-agents-backend"}
+{"error":"Cannot read properties of undefined (reading 'snapshot')","level":"warn","message":"MCP locator discovery failed, using fallback","service":"pw-ai-agents-backend"}
+{"confidence":0.3,"description":"Click login button","level":"info","message":"Discovered locator","method":"mcp-fallback","selector":"getByTestId('click-login-button')","service":"pw-ai-agents-backend"}
+{"level":"info","message":"MCP locator discovery: connecting to MCP server","serverPath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\MCP\\dist\\index.js","service":"pw-ai-agents-backend"}
+{"error":"Cannot read properties of undefined (reading 'snapshot')","level":"warn","message":"MCP locator discovery failed, using fallback","service":"pw-ai-agents-backend"}
+{"confidence":0.3,"description":"Click create lead button","level":"info","message":"Discovered locator","method":"mcp-fallback","selector":"getByTestId('click-create-lead-button')","service":"pw-ai-agents-backend"}
+{"duration":8415,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":1236,"service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Validating generated script","scriptLength":1236,"service":"pw-ai-agents-backend"}
+{"duration":3,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_003.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_003.spec.ts","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"duration":8442,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"343cbe54-26bb-42a2-aaee-da6b5c156541","service":"pw-ai-agents-backend","statusCode":200}
+{"level":"info","message":"Incoming request","method":"POST","path":"/api/v1/scripts/generate","query":{},"requestId":"42674db5-7c1a-4d1a-be0c-93142fda5e8d","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","llmEnabled":true,"message":"Generating test script","service":"pw-ai-agents-backend","testId":"TC_003","testName":"CRMSFA - Create Lead Flow (MCP)"}
+{"level":"info","message":"Enhancing test metadata with GrokAPI","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"error","message":"Grok API call failed","model":"grok-3","service":"pw-ai-agents-backend"}
+{"error":"Request failed with status code 400","level":"warn","message":"LLM enhancement failed, using original metadata","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"enhancedSteps":17,"level":"info","message":"Metadata enhancement complete","originalSteps":17,"service":"pw-ai-agents-backend"}
+{"level":"info","message":"MCP locator discovery: connecting to MCP server","serverPath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\MCP\\dist\\index.js","service":"pw-ai-agents-backend"}
+{"elementCount":8,"level":"info","message":"MCP locator discovery: received element tree","service":"pw-ai-agents-backend","url":"https://leaftaps.com/crmsfa/control/main"}
+{"confidence":0.3,"description":"Click login button","level":"info","message":"Discovered locator","method":"mcp-fallback","selector":"getByTestId('click-login-button')","service":"pw-ai-agents-backend"}
+{"level":"info","message":"MCP locator discovery: connecting to MCP server","serverPath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\MCP\\dist\\index.js","service":"pw-ai-agents-backend"}
+{"elementCount":8,"level":"info","message":"MCP locator discovery: received element tree","service":"pw-ai-agents-backend","url":"https://leaftaps.com/crmsfa/control/main"}
+{"confidence":0.3,"description":"Click create lead button","level":"info","message":"Discovered locator","method":"mcp-fallback","selector":"getByTestId('click-create-lead-button')","service":"pw-ai-agents-backend"}
+{"duration":7868,"level":"info","llmUsed":true,"message":"Script generated successfully","scriptLength":1236,"service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Validating generated script","scriptLength":1236,"service":"pw-ai-agents-backend"}
+{"duration":0,"errorCount":0,"isValid":true,"level":"info","message":"Script validation completed","service":"pw-ai-agents-backend","warningCount":0}
+{"filePath":"c:\\Users\\prathb\\Downloads\\pw-ai-agent-main\\pw-ai-agent-main\\pw-ai-agents\\tests\\ui\\TC_003.spec.ts","level":"info","message":"Test script saved to disk","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"level":"info","message":"Script saved successfully","scriptPath":"tests\\ui\\TC_003.spec.ts","service":"pw-ai-agents-backend","testId":"TC_003"}
+{"duration":7879,"level":"info","message":"Outgoing response","method":"POST","path":"/scripts/generate","requestId":"42674db5-7c1a-4d1a-be0c-93142fda5e8d","service":"pw-ai-agents-backend","statusCode":200}

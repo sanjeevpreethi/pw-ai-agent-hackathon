@@ -1,0 +1,159 @@
+{
+  "testMetadata": {
+    "id": "TC_003",
+    "name": "CRMSFA - Create Lead Flow (MCP)",
+    "description": "End-to-end test for creating a new lead in CRMSFA using MCP browser tools",
+    "url": "https://leaftaps.com/crmsfa/control/main",
+    "credentials": {
+      "username": "demosalesmanager",
+      "password": "crmsfa"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/crmsfa/control/main",
+        "value": "",
+        "description": "Navigate to CRMSFA main page"
+      },
+      {
+        "stepNumber": 2,
+        "action": "Type",
+        "target": "input[name=\"j_username\"]",
+        "value": "demosalesmanager",
+        "description": "Enter username"
+      },
+      {
+        "stepNumber": 3,
+        "action": "Type",
+        "target": "input[name=\"j_password\"]",
+        "value": "crmsfa",
+        "description": "Enter password"
+      },
+      {
+        "stepNumber": 4,
+        "action": "Click",
+        "target": "input[type=\"submit\"]",
+        "value": "",
+        "description": "Click login button"
+      },
+      {
+        "stepNumber": 5,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/crmsfa/control/createLeadForm",
+        "value": "",
+        "description": "Navigate to Create Lead Form"
+      },
+      {
+        "stepNumber": 6,
+        "action": "Type",
+        "target": "input[name=\"companyName\"]",
+        "value": "TechVision Solutions Inc",
+        "description": "Enter company name"
+      },
+      {
+        "stepNumber": 7,
+        "action": "Type",
+        "target": "input[name=\"firstName\"]",
+        "value": "Michael",
+        "description": "Enter first name (required)"
+      },
+      {
+        "stepNumber": 8,
+        "action": "Type",
+        "target": "input[name=\"lastName\"]",
+        "value": "Johnson",
+        "description": "Enter last name (required)"
+      },
+      {
+        "stepNumber": 9,
+        "action": "Type",
+        "target": "input[name=\"localFirstName\"]",
+        "value": "Mike",
+        "description": "Enter local first name"
+      },
+      {
+        "stepNumber": 10,
+        "action": "Type",
+        "target": "input[name=\"personalTitle\"]",
+        "value": "Senior Business Development Manager",
+        "description": "Enter job title"
+      },
+      {
+        "stepNumber": 11,
+        "action": "Type",
+        "target": "input[name=\"departmentName\"]",
+        "value": "Business Development",
+        "description": "Enter department"
+      },
+      {
+        "stepNumber": 12,
+        "action": "Type",
+        "target": "textarea[name=\"description\"]",
+        "value": "High-priority prospect for Q2 2026. Referred by industry contact.",
+        "description": "Enter description"
+      },
+      {
+        "stepNumber": 13,
+        "action": "Type",
+        "target": "input[name=\"primaryEmail\"]",
+        "value": "michael.johnson@techvision.com",
+        "description": "Enter primary email"
+      },
+      {
+        "stepNumber": 14,
+        "action": "Type",
+        "target": "input[name=\"primaryPhoneNumber\"]",
+        "value": "+1-555-0123",
+        "description": "Enter phone number"
+      },
+      {
+        "stepNumber": 15,
+        "action": "Type",
+        "target": "input[name=\"primaryPhoneAskForName\"]",
+        "value": "+1-555-0124",
+        "description": "Enter fax number"
+      },
+      {
+        "stepNumber": 16,
+        "action": "Select",
+        "target": "select[name=\"generalStateProvinceGeoId\"]",
+        "value": "CA",
+        "description": "Select state/province"
+      },
+      {
+        "stepNumber": 17,
+        "action": "Click",
+        "target": "input[type=\"submit\"]",
+        "value": "",
+        "description": "Click create lead button"
+      }
+    ],
+    "assertions": [
+      {
+        "type": "url",
+        "matcher": "contains",
+        "expected": "viewLead",
+        "description": "Should navigate to lead view page"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "Michael Johnson",
+        "description": "Should display created lead name"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "TechVision Solutions Inc",
+        "description": "Should display company name"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "michael.johnson@techvision.com",
+        "description": "Should display email"
+      }
+    ]
+  }
+}

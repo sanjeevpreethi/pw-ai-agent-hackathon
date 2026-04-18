@@ -1,0 +1,22 @@
+{
+  "testCaseId": "TC_001",
+  "testName": "User Login Test",
+  "testDescription": "Test user login functionality",
+  "testSteps": [
+    {
+      "step": 1,
+      "action": "Navigate to login page",
+      "expectedResult": "Login page is displayed"
+    },
+    {
+      "step": 2,
+      "action": "Enter email and password",
+      "expectedResult": "Fields are populated"
+    },
+    {
+      "step": 3,
+      "action": "Click login button",
+      "expectedResult": "User is logged in"
+    }
+  ]
+}

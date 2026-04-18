@@ -1,0 +1,4 @@
+curl -X POST "http://localhost:3000/api/v1/scripts/generate" \
+  -H "Authorization: Bearer test-token" \
+  -H "Content-Type: application/json" \
+  --data-binary "@pw-ai-agents/test-data/TC_004-createOpportunity-metadata.json"

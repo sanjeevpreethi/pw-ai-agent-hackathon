@@ -1,0 +1,27 @@
+{
+  "name": "playwright-scripts",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript scripting project",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "test:automation": "playwright test tests/automation",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install",
+    "build": "tsc",
+    "orchestrate": "tsx orchestrator.ts",
+    "orchestrate:dev": "tsx --watch orchestrator.ts",
+    "automate": "tsx automation-agent.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.28.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^25.5.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

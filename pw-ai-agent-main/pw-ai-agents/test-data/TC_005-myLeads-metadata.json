@@ -1,0 +1,72 @@
+{
+  "testMetadata": {
+    "id": "TC_005",
+    "name": "CRMSFA - My Leads Navigation (MCP)",
+    "description": "Navigate to My Leads page, select a random lead and verify viewLead navigation",
+    "url": "https://leaftaps.com/crmsfa/control/main",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/crmsfa/control/main",
+        "value": "",
+        "description": "Navigate to CRMSFA main page"
+      },
+      {
+        "stepNumber": 2,
+        "action": "Fill",
+        "target": "Username",
+        "value": "demosalesmanager",
+        "description": "Enter Username"
+      },
+      {
+        "stepNumber": 3,
+        "action": "Fill",
+        "target": "Password",
+        "value": "crmsfa",
+        "description": "Enter Password"
+      },
+      {
+        "stepNumber": 4,
+        "action": "Click",
+        "target": "Login",
+        "value": "",
+        "description": "Click Login button"
+      },
+      {
+        "stepNumber": 5,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/crmsfa/control/myLeads",
+        "value": "",
+        "description": "Navigate to My Leads page"
+      },
+      {
+        "stepNumber": 6,
+        "action": "Click",
+        "target": "Random lead link in the leads table",
+        "value": "",
+        "description": "Click a random lead from the list"
+      }
+    ],
+    "assertions": [
+      {
+        "type": "url",
+        "matcher": "contains",
+        "expected": "viewLead",
+        "description": "Should navigate to viewLead page with partyId"
+      },
+      {
+        "type": "url",
+        "matcher": "contains",
+        "expected": "partyId",
+        "description": "URL should contain partyId parameter"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "Lead",
+        "description": "Page should display Lead details heading"
+      }
+    ]
+  }
+}

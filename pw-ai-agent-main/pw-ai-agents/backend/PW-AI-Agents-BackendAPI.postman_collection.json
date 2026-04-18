@@ -1,0 +1,524 @@
+{
+  "info": {
+    "_postman_id": "pw-ai-agents-backend-collection",
+    "name": "PW-AI-Agents Backend API",
+    "description": "Comprehensive Postman collection for PW-AI-Agents backend testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:3000",
+      "type": "string",
+      "description": "Backend server base URL"
+    },
+    {
+      "key": "api_version",
+      "value": "v1",
+      "type": "string",
+      "description": "API version"
+    },
+    {
+      "key": "auth_token",
+      "value": "your-auth-token-here",
+      "type": "string",
+      "description": "Bearer token for authenticated endpoints"
+    },
+    {
+      "key": "execution_id",
+      "value": "",
+      "type": "string",
+      "description": "Execution ID from test execution response"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health & Monitoring",
+      "description": "Public endpoints for health checks and status",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            },
+            "description": "Check if the backend server is healthy and running"
+          },
+          "response": [
+            {
+              "name": "Healthy Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/health",
+                  "host": ["{{base_url}}"],
+                  "path": ["health"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"status\": \"healthy\",\n  \"timestamp\": \"2026-04-11T10:30:45.123Z\",\n  \"services\": {\n    \"database\": true,\n    \"cache\": true,\n    \"ai_model\": true,\n    \"playwright_mcp\": true\n  },\n  \"metrics\": {\n    \"uptime\": 3456,\n    \"requestCount\": 0,\n    \"errorCount\": 0\n  }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Metrics",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/metrics",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "metrics"]
+            },
+            "description": "Get system metrics and performance statistics"
+          },
+          "response": [
+            {
+              "name": "Metrics Response",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/metrics",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "metrics"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"testRunner\": {\n    \"queueLength\": 5,\n    \"runningTests\": 3,\n    \"completedTests\": 42,\n    \"browserPoolMetrics\": {}\n  },\n  \"browserPool\": {\n    \"totalInstances\": 4,\n    \"activeInstances\": 3,\n    \"idleInstances\": 1,\n    \"utilizationRate\": 75\n  },\n  \"timestamp\": \"2026-04-11T10:30:45.123Z\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Test Generation",
+      "description": "Endpoints for uploading and generating test scripts",
+      "item": [
+        {
+          "name": "Upload Test Cases",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"testCases\": [\n    {\n      \"testCaseId\": \"TC_001\",\n      \"testName\": \"User Login\",\n      \"steps\": [\n        {\n          \"stepNumber\": 1,\n          \"action\": \"Navigate to login page\",\n          \"input\": \"https://example.com/login\"\n        },\n        {\n          \"stepNumber\": 2,\n          \"action\": \"Enter username\",\n          \"input\": \"user@example.com\"\n        },\n        {\n          \"stepNumber\": 3,\n          \"action\": \"Enter password\",\n          \"input\": \"password123\"\n        },\n        {\n          \"stepNumber\": 4,\n          \"action\": \"Click login button\",\n          \"input\": \"\"\n        }\n      ],\n      \"expectedResults\": [\n        \"User is successfully logged in\",\n        \"Dashboard page is displayed\"\n      ]\n    }\n  ],\n  \"format\": \"manual\",\n  \"projectId\": \"proj_12345\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/test-cases/upload",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "test-cases", "upload"]
+            },
+            "description": "Upload and parse test cases from various formats (manual, Jira, Excel)"
+          },
+          "response": [
+            {
+              "name": "Success Response",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"testCases\": []}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/test-cases/upload",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "test-cases", "upload"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"success\": true,\n  \"data\": {\n    \"uploadId\": \"550e8400-e29b-41d4-a716-446655440000\",\n    \"parsedTestCases\": [\n      {\n        \"id\": \"TC_001\",\n        \"name\": \"User Login\",\n        \"steps\": [],\n        \"assertions\": []\n      }\n    ],\n    \"errors\": [],\n    \"summary\": {\n      \"total\": 1,\n      \"successful\": 1,\n      \"failed\": 0\n    }\n  },\n  \"timestamp\": \"2026-04-11T10:30:45.123Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Generate Single Script",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"testMetadata\": {\n    \"id\": \"TC_001\",\n    \"name\": \"User Login\",\n    \"description\": \"Test user login functionality\",\n    \"steps\": [\n      {\n        \"stepNumber\": 1,\n        \"action\": \"Navigate\",\n        \"target\": \"https://example.com/login\",\n        \"value\": \"\"\n      },\n      {\n        \"stepNumber\": 2,\n        \"action\": \"Fill\",\n        \"target\": \"[data-testid='username']\",\n        \"value\": \"user@example.com\"\n      },\n      {\n        \"stepNumber\": 3,\n        \"action\": \"Fill\",\n        \"target\": \"[data-testid='password']\",\n        \"value\": \"password123\"\n      },\n      {\n        \"stepNumber\": 4,\n        \"action\": \"Click\",\n        \"target\": \"[data-testid='login-btn']\",\n        \"value\": \"\"\n      }\n    ],\n    \"assertions\": [\n      {\n        \"type\": \"url\",\n        \"matcher\": \"contains\",\n        \"expected\": \"dashboard\"\n      },\n      {\n        \"type\": \"text\",\n        \"matcher\": \"equals\",\n        \"expected\": \"Welcome\"\n      }\n    ]\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/scripts/generate",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "scripts", "generate"]
+            },
+            "description": "Generate a Playwright TypeScript test script from test metadata"
+          },
+          "response": [
+            {
+              "name": "Script Generated",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/scripts/generate",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "scripts", "generate"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"success\": true,\n  \"data\": {\n    \"testId\": \"TC_001\",\n    \"generatedScript\": \"import { test, expect } from '@playwright/test';\\n\\ntest('User Login', async ({ page }) => {\\n  await page.goto('https://example.com/login');\\n  await page.fill('[data-testid=\"username\"]', 'user@example.com');\\n  // ... script content\\n});\",\n    \"scriptPath\": \"./scripts/TC_001.ts\",\n    \"validationStatus\": \"valid\",\n    \"errors\": [],\n    \"warnings\": []\n  },\n  \"timestamp\": \"2026-04-11T10:30:45.123Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Generate Multiple Scripts (Batch)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"testMetadataList\": [\n    {\n      \"id\": \"TC_001\",\n      \"name\": \"User Login\",\n      \"steps\": [],\n      \"assertions\": []\n    },\n    {\n      \"id\": \"TC_002\",\n      \"name\": \"User Logout\",\n      \"steps\": [],\n      \"assertions\": []\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/scripts/generate-batch",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "scripts", "generate-batch"]
+            },
+            "description": "Generate multiple test scripts in batch"
+          },
+          "response": [
+            {
+              "name": "Batch Generated",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/scripts/generate-batch",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "scripts", "generate-batch"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"success\": true,\n  \"data\": {\n    \"batchId\": \"550e8400-e29b-41d4-a716-446655440000\",\n    \"scripts\": [\n      {\n        \"testId\": \"TC_001\",\n        \"success\": true,\n        \"script\": \"...\",\n        \"validationStatus\": \"valid\",\n        \"errors\": []\n      },\n      {\n        \"testId\": \"TC_002\",\n        \"success\": true,\n        \"script\": \"...\",\n        \"validationStatus\": \"valid\",\n        \"errors\": []\n      }\n    ],\n    \"summary\": {\n      \"total\": 2,\n      \"successful\": 2,\n      \"failed\": 0\n    }\n  },\n  \"timestamp\": \"2026-04-11T10:30:45.123Z\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Test Execution",
+      "description": "Endpoints for executing tests and managing executions",
+      "item": [
+        {
+          "name": "Execute Tests",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"testIds\": [\"TC_001\", \"TC_002\"],\n  \"scriptPaths\": [\"./scripts/TC_001.ts\", \"./scripts/TC_002.ts\"],\n  \"browsers\": [\"chrome\"],\n  \"parallel\": true,\n  \"maxWorkers\": 4,\n  \"headless\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/executions/run",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "executions", "run"]
+            },
+            "description": "Execute tests with specified configuration"
+          },
+          "response": [
+            {
+              "name": "Execution Started",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/executions/run",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "executions", "run"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"success\": true,\n  \"data\": {\n    \"executionId\": \"550e8400-e29b-41d4-a716-446655440000\",\n    \"tests\": [\n      {\n        \"testId\": \"TC_001\",\n        \"testName\": \"User Login\",\n        \"status\": \"passed\",\n        \"duration\": 2345,\n        \"browser\": \"chrome\",\n        \"error\": null,\n        \"artifacts\": {\n          \"screenshot\": \"./artifacts/TC_001-screenshot.png\"\n        },\n        \"retryCount\": 0,\n        \"timestamp\": \"2026-04-11T10:30:45.123Z\"\n      },\n      {\n        \"testId\": \"TC_002\",\n        \"testName\": \"User Logout\",\n        \"status\": \"passed\",\n        \"duration\": 1234,\n        \"browser\": \"chrome\",\n        \"error\": null,\n        \"artifacts\": {},\n        \"retryCount\": 0,\n        \"timestamp\": \"2026-04-11T10:30:47.123Z\"\n      }\n    ],\n    \"summary\": {\n      \"totalTests\": 2,\n      \"passed\": 2,\n      \"failed\": 0,\n      \"skipped\": 0,\n      \"errors\": 0,\n      \"duration\": 4,\n      \"successRate\": 100,\n      \"timestamp\": \"2026-04-11T10:30:48.123Z\"\n    },\n    \"reportPath\": \"./reports/execution-550e8400-e29b-41d4-a716-446655440000.html\"\n  },\n  \"timestamp\": \"2026-04-11T10:30:48.123Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Execution Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/executions/{{execution_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "executions", "{{execution_id}}"]
+            },
+            "description": "Get the status of a specific execution"
+          },
+          "response": [
+            {
+              "name": "Execution Status",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/executions/{{execution_id}}",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "executions", "{{execution_id}}"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"success\": true,\n  \"data\": {\n    \"executionId\": \"{{execution_id}}\",\n    \"status\": \"completed\",\n    \"metrics\": {\n      \"queueLength\": 0,\n      \"runningTests\": 0,\n      \"completedTests\": 2,\n      \"browserPoolMetrics\": {}\n    }\n  },\n  \"timestamp\": \"2026-04-11T10:30:48.123Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get Test Results",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/executions/{{execution_id}}/results?page=1&pageSize=10",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "executions", "{{execution_id}}", "results"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Page number for pagination"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "10",
+                  "description": "Number of results per page"
+                }
+              ]
+            },
+            "description": "Get paginated test results for an execution"
+          },
+          "response": [
+            {
+              "name": "Paginated Results",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/executions/{{execution_id}}/results?page=1&pageSize=10",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "executions", "{{execution_id}}", "results"],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "pageSize",
+                      "value": "10"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"success\": true,\n  \"data\": {\n    \"executionId\": \"{{execution_id}}\",\n    \"results\": [\n      {\n        \"testId\": \"TC_001\",\n        \"testName\": \"User Login\",\n        \"status\": \"passed\",\n        \"duration\": 2345,\n        \"browser\": \"chrome\",\n        \"error\": null,\n        \"artifacts\": {},\n        \"retryCount\": 0,\n        \"timestamp\": \"2026-04-11T10:30:45.123Z\"\n      }\n    ],\n    \"pagination\": {\n      \"page\": 1,\n      \"pageSize\": 10,\n      \"total\": 50,\n      \"totalPages\": 5\n    }\n  },\n  \"timestamp\": \"2026-04-11T10:30:48.123Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Cancel Execution",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{auth_token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/{{api_version}}/executions/{{execution_id}}/cancel",
+              "host": ["{{base_url}}"],
+              "path": ["api", "{{api_version}}", "executions", "{{execution_id}}", "cancel"]
+            },
+            "description": "Cancel an ongoing or queued execution"
+          },
+          "response": [
+            {
+              "name": "Execution Cancelled",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{auth_token}}",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{base_url}}/api/{{api_version}}/executions/{{execution_id}}/cancel",
+                  "host": ["{{base_url}}"],
+                  "path": ["api", "{{api_version}}", "executions", "{{execution_id}}", "cancel"]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "body": "{\n  \"success\": true,\n  \"data\": {\n    \"executionId\": \"{{execution_id}}\",\n    \"status\": \"cancelled\"\n  },\n  \"timestamp\": \"2026-04-11T10:30:48.123Z\"\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

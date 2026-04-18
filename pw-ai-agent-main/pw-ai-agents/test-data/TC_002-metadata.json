@@ -1,0 +1,50 @@
+{
+  "testMetadata": {
+    "id": "TC_002",
+    "name": "Leaftaps User Login",
+    "description": "Test user login functionality on leaftaps.com",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/opentaps/control/main",
+        "value": ""
+      },
+      {
+        "stepNumber": 2,
+        "action": "Fill",
+        "target": "Username Input",
+        "value": "demosalesmanager"
+      },
+      {
+        "stepNumber": 3,
+        "action": "Fill",
+        "target": "Password Input",
+        "value": "crmsfa"
+      },
+      {
+        "stepNumber": 4,
+        "action": "Click",
+        "target": "Login Button",
+        "value": ""
+      }
+    ],
+    "assertions": [
+      {
+        "type": "url",
+        "matcher": "contains",
+        "expected": "main"
+      },
+      {
+        "type": "element",
+        "matcher": "visible",
+        "expected": "button[name*='Logout']"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "Sales Manager"
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "testMetadata": {
+    "id": "TC_003",
+    "name": "Leaftaps Create Lead",
+    "description": "Test lead creation workflow after login on leaftaps.com",
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/opentaps/control/main",
+        "value": ""
+      },
+      {
+        "stepNumber": 2,
+        "action": "Fill",
+        "target": "Username Input",
+        "value": "demosalesmanager"
+      },
+      {
+        "stepNumber": 3,
+        "action": "Fill",
+        "target": "Password Input",
+        "value": "crmsfa"
+      },
+      {
+        "stepNumber": 4,
+        "action": "Click",
+        "target": "Login Button",
+        "value": ""
+      },
+      {
+        "stepNumber": 5,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/crmsfa/control/createLeadForm",
+        "value": ""
+      },
+      {
+        "stepNumber": 6,
+        "action": "Fill",
+        "target": "Company Name Input",
+        "value": "Acme Corporation"
+      },
+      {
+        "stepNumber": 7,
+        "action": "Fill",
+        "target": "First Name Input",
+        "value": "Jane"
+      },
+      {
+        "stepNumber": 8,
+        "action": "Fill",
+        "target": "Last Name Input",
+        "value": "Doe"
+      },
+      {
+        "stepNumber": 9,
+        "action": "Fill",
+        "target": "Local First Name Input",
+        "value": "Jan"
+      },
+      {
+        "stepNumber": 10,
+        "action": "Fill",
+        "target": "Department Input",
+        "value": "Sales"
+      },
+      {
+        "stepNumber": 11,
+        "action": "Fill",
+        "target": "Description Input",
+        "value": "Created by automation test"
+      },
+      {
+        "stepNumber": 12,
+        "action": "Fill",
+        "target": "Primary Email Input",
+        "value": "jane.doe@example.com"
+      },
+      {
+        "stepNumber": 13,
+        "action": "Select",
+        "target": "State/Province Dropdown",
+        "value": "New York"
+      },
+      {
+        "stepNumber": 14,
+        "action": "Click",
+        "target": "Create Lead Button",
+        "value": ""
+      }
+    ],
+    "assertions": [
+      {
+        "type": "url",
+        "matcher": "contains",
+        "expected": "viewLead"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "View Lead"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "Acme Corporation"
+      }
+    ]
+  }
+}

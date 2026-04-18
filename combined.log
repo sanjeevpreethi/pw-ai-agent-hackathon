@@ -1,0 +1,3 @@
+{"level":"info","message":"GrokAPI LLM service initialized for test generation","service":"pw-ai-agents-backend"}
+{"level":"info","message":"Connecting to database","service":"pw-ai-agents-backend","url":"localhost:5432/pw_ai_agents"}
+{"level":"info","message":"Database connection established","service":"pw-ai-agents-backend"}

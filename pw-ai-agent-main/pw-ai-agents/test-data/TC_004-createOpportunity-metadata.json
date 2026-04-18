@@ -1,0 +1,111 @@
+{
+  "testMetadata": {
+    "id": "TC_004",
+    "name": "CRMSFA - Create Opportunity Flow (MCP)",
+    "description": "End-to-end test for creating a new opportunity in CRMSFA using accessibility-first actions",
+    "url": "https://leaftaps.com/crmsfa/control/main",
+    "credentials": {
+      "username": "demosalesmanager",
+      "password": "crmsfa"
+    },
+    "steps": [
+      {
+        "stepNumber": 1,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/crmsfa/control/main",
+        "value": "",
+        "description": "Navigate to CRMSFA main page"
+      },
+      {
+        "stepNumber": 2,
+        "action": "Fill",
+        "target": "Username",
+        "value": "demosalesmanager",
+        "description": "Enter Username"
+      },
+      {
+        "stepNumber": 3,
+        "action": "Fill",
+        "target": "Password",
+        "value": "crmsfa",
+        "description": "Enter Password"
+      },
+      {
+        "stepNumber": 4,
+        "action": "Click",
+        "target": "Login",
+        "value": "",
+        "description": "Click Login button"
+      },
+      {
+        "stepNumber": 5,
+        "action": "Navigate",
+        "target": "https://leaftaps.com/crmsfa/control/createOpportunityForm",
+        "value": "",
+        "description": "Navigate to Create Opportunity page"
+      },
+      {
+        "stepNumber": 6,
+        "action": "Fill",
+        "target": "Account Or Lead",
+        "value": "NovaPeak Systems LLC",
+        "description": "Enter Account Or Lead"
+      },
+      {
+        "stepNumber": 7,
+        "action": "Fill",
+        "target": "Opportunity Name",
+        "value": "Q3 Platform Modernization Deal",
+        "description": "Enter Opportunity Name"
+      },
+      {
+        "stepNumber": 8,
+        "action": "Select",
+        "target": "Initial Stage",
+        "value": "Prospecting",
+        "description": "Select Initial Stage"
+      },
+      {
+        "stepNumber": 9,
+        "action": "Fill",
+        "target": "Opportunity Amount",
+        "value": "150000",
+        "description": "Enter Opportunity Amount"
+      },
+      {
+        "stepNumber": 10,
+        "action": "Fill",
+        "target": "Estimated Close Date",
+        "value": "12/31/2026",
+        "description": "Enter Estimated Close Date"
+      },
+      {
+        "stepNumber": 11,
+        "action": "Click",
+        "target": "Create Opportunity",
+        "value": "",
+        "description": "Click Create Opportunity button"
+      }
+    ],
+    "assertions": [
+      {
+        "type": "url",
+        "matcher": "contains",
+        "expected": "viewOpportunity",
+        "description": "Should navigate to View Opportunity page"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "Q3 Platform Modernization Deal",
+        "description": "Should display Opportunity Name"
+      },
+      {
+        "type": "text",
+        "matcher": "contains",
+        "expected": "150000",
+        "description": "Should display Opportunity Amount"
+      }
+    ]
+  }
+}
